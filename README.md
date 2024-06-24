@@ -1,2 +1,13 @@
 # Face-recognition-
-Face recognition made with python 
+Face recognition made with python
+
+
+# authors :-
+
+RAVIYANSH GUJJAR 
+
+ROHAN GUPTA
+
+SARTHAK TYAGI
+
+UTTKARSH JAIN

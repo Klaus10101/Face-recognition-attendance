@@ -1,6 +1,6 @@
 # Attendence with Face-recognition-
  made with python.
-requirements and code are already in README.md in zip file
+requirements and code are already in required_modules.txt in zip file
 
 
 # authors :-

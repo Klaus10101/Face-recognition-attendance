@@ -1,0 +1,12 @@
+############################
+opencv-contrib-python      #                    
+face_recognition           #
+Pillow                     #
+############################
+#remaining modules are inbuilt;)
+
+
+#For installing dependencies______________
+#use:
+#    pip install -r required_modules.txt         <--copy this.
+

@@ -23,7 +23,7 @@ Feature 3: free-usage.
 ```
 https://github.com/Klaus10101/Face-recognition-attendance.git 
 ```
-
+2. Change directory 
 ```
 cd Face-recognition attendance system 
 ```

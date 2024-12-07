@@ -1,12 +1,11 @@
---
-🚀 Face recognition attendance system
+#🚀 Face recognition attendance system
 
 fully made with python .
 
 
 ---
 
-🌟 Features
+#🌟 Features
 
 Feature 1: uses opencv for accurate face recognition .
 
@@ -18,28 +17,36 @@ Feature 3: use python only
 
 ---
 
-🛠️ Requirements
+#🛠️ Requirements
 
 All required dependencies are listed in required_modules.txt.
 
 
 ---
 
-⚡ Quick Start
+#⚡ Quick Start
 
-1. Clone the Repository
-2. 
+#1. Clone the Repository
+#2. 
 https://github.com/Klaus10101/Face-recognition-attendance.git
 
 cd Face-recognition attendance system 
 
 
-3. Install Requirements
+#or
+
+you can just click on doc....zip 
+to download
+
+
+
+
+#3. Install Requirements
 
 pip install -r required_modules.txt
 
 
-3. Run the Project
+#4. Run the Project
 
 python app-gui.py
 
@@ -51,7 +58,7 @@ python app-gui.py
 
 ---
 
-📃 License
+#📃 License
 
 This project is licensed under the Apache license2.0 .
 
@@ -60,7 +67,7 @@ This project is licensed under the Apache license2.0 .
 ---
 
 
-👥 authors :-
+#👥 authors :-
 
 RAVIYANSH GUJJAR (aka Klaus10101)
 

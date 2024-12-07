@@ -19,10 +19,14 @@ Feature 3: free-usage.
 # ⚡ Quick Start
 
  1. Clone the Repository
-2. https://github.com/Klaus10101/Face-recognition-attendance.git
+    
+```
+https://github.com/Klaus10101/Face-recognition-attendance.git 
+```
 
-cd Face-recognition attendance system 
-
+```
+cd Face-recognition attendance system .
+```
 
 
 
@@ -38,13 +42,14 @@ All required dependencies are listed in required_modules.txt.
 
 # 3 Install Requirements
 
+```
 pip install -r required_modules.txt
-
+```
 
 # 4 Run the Project
-
+```
 python app-gui.py
-
+```
 
 
 

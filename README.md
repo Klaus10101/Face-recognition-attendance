@@ -1,26 +1,18 @@
-# Attendence with Face-recognition-
- made with python.
-requirements and code are already in required_modules.txt in zip file
+--
+🚀 Face recognition attendance system
 
-Here's a sleek and professional way to structure your README.md for GitHub:
-
-
----
-
-🚀 Project Name
-
-A brief but captivating one-liner about your project.
+fully made with python .
 
 
 ---
 
 🌟 Features
 
-Feature 1: Highlight something amazing.
+Feature 1: uses opencv for accurate face recognition .
 
-Feature 2: Add another key selling point.
+Feature 2: attendance stored in csv file which can be edited in any csv editor.
 
-Feature 3: What makes this unique?
+Feature 3: use python only
 
 
 
@@ -36,53 +28,39 @@ All required dependencies are listed in required_modules.txt.
 ⚡ Quick Start
 
 1. Clone the Repository
+2. 
+https://github.com/Klaus10101/Face-recognition-attendance.git
 
-git clone https://github.com/your-username/your-repo.git  
-cd your-repo
+cd Face-recognition attendance system 
 
 
-2. Install Requirements
+3. Install Requirements
 
 pip install -r required_modules.txt
 
 
 3. Run the Project
 
-python main.py
+python app-gui.py
 
 
 
 
----
 
-📂 Structure
-
-main.py: Entry point of the project.
-
-required_modules.txt: All required dependencies.
-
-
-
----
-
-🤝 Contributing
-
-Contributions are welcome! Please fork this repository and submit a pull request.
 
 
 ---
 
 📃 License
 
-This project is licensed under the MIT License.
+This project is licensed under the Apache license2.0 .
+
 
 
 ---
 
-Replace placeholders like Project Name, Feature 1, etc., with relevant details. Let me know if you need help customizing!
 
-
-# authors :-
+👥 authors :-
 
 RAVIYANSH GUJJAR (aka Klaus10101)
 
@@ -93,5 +71,3 @@ SARTHAK TYAGI
 UTTKARSH JAIN
 
 
-
-# Apache license2.0

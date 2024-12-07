@@ -25,7 +25,7 @@ https://github.com/Klaus10101/Face-recognition-attendance.git
 ```
 
 ```
-cd Face-recognition attendance system .
+cd Face-recognition attendance system 
 ```
 
 

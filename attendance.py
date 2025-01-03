@@ -6,15 +6,16 @@ def stu():
     with open ("nameslist.txt","r") as file:
         data=file.read()
         x=data.split()
-        return (x)
+        return x
+    
 def present():
     with open("present.txt","r") as pr_stu:
         a=pr_stu.read().split()
-        return(a)
+        return a
     
 def add(d,rows): 
     
-    
+   
     filename = 'att.csv'
 
     with open(filename, 'a+', newline='') as csvfile:

@@ -8,15 +8,13 @@ def stu():
         x=data.split()
         return (x)
 def present():
-    L=[]
     with open("present.txt","r") as pr_stu:
-        a=pr_stu.read()
-        L.append(a)
-        return(L)
+        a=pr_stu.read().split()
+        return(a)
   
 for i in stu():
     names.append(i)
-# print(names)
+
 
 sort=sorted(names)
 pr = present() #list of recognised students
@@ -38,15 +36,10 @@ def add():
 
     with open(filename, 'a+', newline='') as csvfile:
         csvwriter = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
-        # csvwriter.writerows([[x.strftime("%x, %A")]])
         csvwriter.writerows([[f"Date:  {d}"]])
         csvwriter.writerows("\n")
         csvwriter.writerows([["Names","","Presence"]])
         csvwriter.writerows("\n")
         csvwriter.writerows(rows)
         csvwriter.writerows("\n")
-
-#print(f"Data has been written to {filename}")
-add()
-
 

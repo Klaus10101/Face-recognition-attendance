@@ -48,9 +48,9 @@ class MainUI(tk.Tk):
 
         if box.askokcancel("Quit", "Are you sure?"):
             global names
-            f =  open("nameslist.txt", "w")
-            for i in names:
-                    f.write(i+" ")
+            # f =  open("nameslist.txt", "w")
+            # for i in names:
+            #         f.write(i+" ")
             self.destroy()
 
 
@@ -115,7 +115,7 @@ class AttendancePage(tk.Frame):
         stu()                          #_______
         present()                      #-------| ye function attendance.py mei se import kiye hain
         self.attendance_mark_succesfuly() 
-        return add()                       #___|
+        add()                       #___|
         
     
 
@@ -124,6 +124,8 @@ class AttendancePage(tk.Frame):
 
 class PageOne(tk.Frame):
     def __init__(self, parent, controller):
+        
+
         tk.Frame.__init__(self, parent)
         self.controller = controller
         tk.Label(self, text="Enter the name", fg="#263942", font='Helvetica 12 bold').grid(row=0, column=0, pady=10, padx=5)
@@ -136,6 +138,7 @@ class PageOne(tk.Frame):
 
     def start_training(self):
         global names
+        
         if self.user_name.get() == "None":
             box.showerror("Error", "Name cannot be 'None'")
             return
@@ -147,6 +150,9 @@ class PageOne(tk.Frame):
             return
         name = self.user_name.get()
         names.add(name)
+        with open("nameslist.txt", "a") as f:
+                    f.write(name+" ")
+
         self.controller.active_name = name
         self.controller.frames["PageTwo"].refresh_names()
         self.controller.show_frame("PageThree")
@@ -204,7 +210,7 @@ class PageThree(tk.Frame):
 
     def trainmodel(self):
         if self.controller.num_of_images < 150:
-            box.showerror("ERROR", "No enough Data, Capture at least 10 images!")
+            box.showerror("ERROR", "No enough Data, Capture at least 100 images!")
             return
         train_classifer(self.controller.active_name)
         box.showinfo("SUCCESS", "The modele has been successfully trained!")
@@ -220,15 +226,16 @@ class PageFour(tk.Frame):
         label = tk.Label(self, text="Face Recognition", font='Helvetica 16 bold')
         label.grid(row=0,column=0, sticky="ew")
         button1 = tk.Button(self, text="Face Recognition", command=self.openwebcam , fg="#ffffff", bg="#263942")
-      
+        
         button4 = tk.Button(self, text="Go to Home Page", command=lambda: self.controller.show_frame("StartPage"), bg="#ffffff", fg="#263942")
         button1.grid(row=1,column=0, sticky="ew", ipadx=5, ipady=4, padx=10, pady=10)
        
         button4.grid(row=1,column=1, sticky="ew", ipadx=5, ipady=4, padx=10, pady=10)
 
     def openwebcam(self):
+        box.showinfo("info","enter \"Esc\" to quit the camera window !! ")
+
         main_app(self.controller.active_name)
-        time.sleep(5)
         return True
     
 

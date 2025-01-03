@@ -31,7 +31,7 @@ def start_capture(name):
             except :
 
                 pass
-            if key == ord("q") or key == 27 or num_of_images > 150:
+            if key == ord("q") or key == 27 or num_of_images > 100:
                 break
         cv2.destroyAllWindows()
         return num_of_images

@@ -1,4 +1,3 @@
-from attendance import *
 from Detector import main_app
 from create_classifier import train_classifer
 from create_dataset import start_capture
@@ -6,7 +5,6 @@ import tkinter as tk
 from tkinter import font as tkfont
 from tkinter import PhotoImage
 import subprocess
-import time
 import box
 # import cv2
 names = set()
@@ -48,9 +46,6 @@ class MainUI(tk.Tk):
 
         if box.askokcancel("Quit", "Are you sure?"):
             global names
-            # f =  open("nameslist.txt", "w")
-            # for i in names:
-            #         f.write(i+" ")
             self.destroy()
 
 
@@ -81,7 +76,7 @@ class StartPage(tk.Frame):
                
 
 class AttendancePage(tk.Frame):
-
+    
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
@@ -111,13 +106,25 @@ class AttendancePage(tk.Frame):
             
 
 
-    def mark_attendance(self):
-        stu()                          #_______
-        present()                      #-------| ye function attendance.py mei se import kiye hain
-        self.attendance_mark_succesfuly() 
-        add()                       #___|
-        
-    
+    def mark_attendance(self): 
+        from attendance import add, present, stu, x 
+        names = []
+        for i in stu():
+            names.append(i) 
+        sort = sorted(names)
+        pr = present()
+        rows=[]
+        for i in sort:
+            if i in pr:
+                rows.append([i,"","Yes"]) 
+            else:
+                rows.append([i,"","No"])
+
+        d=x.strftime("%d/%b/%Y")
+        add(d,rows)        
+        self.attendance_mark_succesfuly()
+       
+
 
 
 
@@ -210,7 +217,7 @@ class PageThree(tk.Frame):
 
     def trainmodel(self):
         if self.controller.num_of_images < 150:
-            box.showerror("ERROR", "No enough Data, Capture at least 100 images!")
+            box.showerror("ERROR", "No enough Data, Capture at least 10 images!")
             return
         train_classifer(self.controller.active_name)
         box.showinfo("SUCCESS", "The modele has been successfully trained!")

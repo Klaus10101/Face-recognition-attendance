@@ -1,5 +1,7 @@
 ############################
-opencv-contrib-python      #                    
+cmake                      #
+dlib                       #
+opencv-contrib-python      #                          
 face_recognition           #
 Pillow                     #
 ############################
